@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="description" content="Анастасия Шабалкина — тату мастер. Графика и реализм. Индивидуальные эскизы, полная стерильность. Запись онлайн.">
+    <title>Акупунктура | Тату Мастер Анастасия Шабалкина</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="stylesheet" href="css/styles.css">
+ 
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <div class="logo">INK MASTER</div>
+        <nav id="nav">
+            <a href="#portfolio">Работы</a>
+            <a href="#about">Обо мне</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Акупунктура.</h1>
+            <p>Создаю уникальные татуировки в стилях графика и реализм. Индивидуальный подход и полная стерильность.</p>
+            <a href="#contacts" class="btn">Записаться на сеанс</a>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <h2 class="section-title animate-on-scroll">Портфолио</h2>
+        
+        <div class="portfolio-slider-wrapper">
+            <button class="portfolio-arrow prev" id="portfolioPrev" aria-label="Назад">&#10094;</button>
+            
+            <div class="portfolio-slider" id="portfolioSlider">
+                <div class="portfolio-card animate-on-scroll">
+                    <img src="images/portfolio/work1.webp" alt="Тату в стиле графика — рукав" loading="lazy">
+                    <div class="portfolio-card-overlay"><span>Графика</span></div>
+                </div>
+                <div class="portfolio-card animate-on-scroll">
+                    <img src="images/portfolio/work2.webp" alt="Тату в стиле реализм — портрет" loading="lazy">
+                    <div class="portfolio-card-overlay"><span>Реализм</span></div>
+                </div>
+                <div class="portfolio-card animate-on-scroll">
+                    <img src="images/portfolio/work3.webp" alt="Тату в стиле блэкворк — геометрия" loading="lazy">
+                    <div class="portfolio-card-overlay"><span>Блэкворк</span></div>
+                </div>
+                <div class="portfolio-card animate-on-scroll">
+                    <img src="images/portfolio/work4.webp" alt="Тату в стиле минимализм" loading="lazy">
+                    <div class="portfolio-card-overlay"><span>Минимализм</span></div>
+                </div>
+            </div>
+            
+            <button class="portfolio-arrow next" id="portfolioNext" aria-label="Вперёд">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" >
+        <h2 class="section-title animate-on-scroll">Обо мне и безопасности</h2>
+        <div class="about-content">
+            <div class="about-text animate-on-scroll fade-left">
+                <p>Год в тату-индустрии. Активно развиваюсь в сфере и совершенствую навыки.</p>
+                <p>Я верю, что татуировка — это не просто картинка, а часть вашей истории. Работаю только по предварительной записи, разрабатывая эксклюзивные эскизы.</p>
+            </div>
+            <div class="animate-on-scroll fade-right">
+                <h3 style="margin-bottom: 20px; color: var(--accent-color);">Гарантия безопасности:</h3>
+                <ul class="hygiene-list">
+                    <li>Только одноразовые иглы и картриджи</li>
+                    <li>Все поверхности защищены барьерной пленкой</li>
+                    <li>Краски сертифицированы (EU REACH)</li>
+                    <li>Работа в медицинских перчатках</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts">
+        <h2 class="section-title animate-on-scroll">Запись и контакты</h2>
+        <div class="contacts-wrapper">
+            <div class="contact-info animate-on-scroll fade-left">
+                <h3 style="margin-bottom: 20px;">Свяжитесь со мной</h3>
+                <a href="https://t.me/acupuncture_tattoo">✦ Telegram: @acupuncture_tattoo</a>
+                <a href="https://wa.me/79674437502">✦ WhatsApp: +7 (967) 443-75-02</a>
+                <a href="https://www.instagram.com/acupuncture_tattoo?igsh=MWZjd2xqOGl6N3MyMg==">✦ Instagram: @acupuncture_tattoo</a>
+                <p style="margin-top: 20px; color: #1a1a1a;">✦ г. Москва, ул. Пестровский пер., 12, стр. 1</p>
+            </div>
+            <form class="animate-on-scroll fade-right" id="contactForm">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="contact" placeholder="Телефон или @Telegram" required>
+                <textarea name="idea" placeholder="Опишите идею тату, размер и место на теле"></textarea>
+                <button type="submit" class="btn" id="submitBtn">Отправить заявку</button>
+                <p id="formMessage"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Анастасия Шабалкина. Все права защищены.</p>
+    </footer>
+
+    <!-- ПЛАВАЮЩАЯ КНОПКА -->
+    <a href="#contacts" class="floating-btn" id="floatingBtn" aria-label="Записаться">
+        <span class="floating-btn-icon">✦</span>
+        <span class="floating-btn-text">Записаться</span>
+    </a>
+
+    <!-- Подключение нашего скрипта -->
+    <script src="js/script.js"></script>
+</body>
+</html>
